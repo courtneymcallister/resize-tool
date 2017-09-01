@@ -33,3 +33,11 @@ var els = document.getElementsByClassName('resizable');
 for (var i = 0, len = els.length; i < len; ++i) {
     els[i].onmouseover = resizableStart;
 }
+
+function preview(){
+  var output = document.getElementById('output');
+  var input = document.getElementById('input').value;
+  output.style.display = 'block';
+  document.getElementById('output').innerHTML = input;
+  
+}

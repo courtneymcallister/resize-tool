@@ -1,4 +1,11 @@
-/*.text-container {
+.resizable {
+  border: 1px solid black;
   resize: both;
   overflow: auto;
-}*/
+  width: 580px;
+  height: 500px;
+}
+
+#output {
+  display: none;
+}
