@@ -39,5 +39,9 @@ function preview(){
   var input = document.getElementById('input').value;
   output.style.display = 'block';
   document.getElementById('output').innerHTML = input;
-  
+
+}
+
+function clearForm(){
+  document.getElementById('input').value = '';
 }

@@ -8,9 +8,10 @@
   <body>
     <h3>Resize Tool</h3>
     <div class='text-container'>
-      <button type="button" onclick='preview()'>Preview</button><br><br>
-      <textarea id='input' rows="8" cols="80" placeholder="Enter your HTML here"></textarea>
-      <div id='output' class="resizable">HTML preview here</div>
+      <textarea id='input' rows="8" cols="80" placeholder="Enter your HTML here"></textarea><br><br>
+      <button type="button" onclick='preview()'>Preview</button>
+      <button type="button" onclick='clearForm()'>Clear</button><br><br>
+      <div id="output" class="resizable"></div>
     </div>
     <script src='/js/app.js'></script>
   </body>
