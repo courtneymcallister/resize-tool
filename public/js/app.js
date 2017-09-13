@@ -44,4 +44,5 @@ function preview(){
 
 function clearForm(){
   document.getElementById('input').value = '';
+  document.getElementById('output').innerHTML = '';
 }
