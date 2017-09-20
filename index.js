@@ -1,10 +1,10 @@
 const express = require('express');
 const server = express();
-const port = 8080;
+const port = 80;
 
 server.use(express.static(__dirname + '/public'));
 
-server.get('/', function(req, res){
+server.get('/resize', function(req, res){
   res.sendFile('index.html', {root: __dirname + '/public/html'})
 });
 
