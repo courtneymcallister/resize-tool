@@ -46,11 +46,15 @@ function preview(){
 function clearForm(){
   document.getElementById('input').value = '';
   document.getElementById('output').innerHTML = '';
+  $('#output').stop(true, false).hide();
+  $('#output').css({width:'750px'});
+  $('#animateButtons').hide();
 }
 
 $('#animateDiv').click(function loop(){
   var div = $('#output');
-  div.animate({width:'100%'}, 7000).animate({width: '10px'}, 8000, function(){
+  div.animate({width:'10px'}, 7000, 'linear')
+     .animate({width: '90%'}, 8000, 'linear', function(){
     loop();
   });
 })
