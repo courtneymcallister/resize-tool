@@ -39,6 +39,7 @@ function preview(){
   var input = document.getElementById('input').value;
   output.style.display = 'block';
   document.getElementById('output').innerHTML = input;
+  $('#animateButtons').show();
 
 }
 
@@ -46,3 +47,14 @@ function clearForm(){
   document.getElementById('input').value = '';
   document.getElementById('output').innerHTML = '';
 }
+
+$('#animateDiv').click(function loop(){
+  var div = $('#output');
+  div.animate({width:'100%'}, 7000).animate({width: '10px'}, 8000, function(){
+    loop();
+  });
+})
+
+$('#stopAnimation').click(function(){
+  $('#output').stop(true, false);
+})

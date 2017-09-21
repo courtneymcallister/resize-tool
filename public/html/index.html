@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Resize Tool</title>
     <link rel="stylesheet" href="/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body>
     <h3>Resize Tool</h3>
@@ -11,6 +12,10 @@
       <textarea id='input' rows="8" cols="80" placeholder="Enter your HTML here"></textarea><br><br>
       <button type="button" onclick='preview()'>Preview</button>
       <button type="button" onclick='clearForm()'>Clear</button><br><br>
+      <div id='animateButtons' hidden="true">
+        <button type="button" id='animateDiv'>Animate</button>
+        <button type="button" id='stopAnimation'>Stop</button><br>
+      </div>
       <div id="output" class="resizable"></div>
     </div>
     <script src='/js/app.js'></script>
